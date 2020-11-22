@@ -1,6 +1,5 @@
 $(document).ready(
     function () {
-       $("#submit_loan").click(processLoan);
 
        var myRules = {
            salary:
@@ -30,21 +29,21 @@ $(document).ready(
            {
                salary: {
                    required: "Salary is required.",
-                   digits: "Salary must be in digits.",
+                   digits: "Salary must be a number.",
                    min: "Salary must be greater than or equal to zero.",
                    max: "Salary must be below 1000000000."
                },
 
                credit: {
                    required: "Credit score is required.",
-                   digits: "Credit score must be in digits.",
+                   digits: "Credit score must be a number.",
                    min: "Credit score must be greater than or equal to 300.",
                    max: "Salary must be less than or equal to 850."
                },
 
                months: {
                    required: "Months are required.",
-                   digits: "Months must be in digits.",
+                   digits: "Months must be a number.",
                    min: "Months must be greater than or equal to zero.",
                    max: "Months must be less than or equal to 840."
                }
