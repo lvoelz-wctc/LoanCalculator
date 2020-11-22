@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Calculator</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id = "loan_calc">
+    <form id ="loan_calc_form">
+        <div id="salary_form">
+            <label for = "salary">Enter your salary: </label>
+            <input type="text" name="salary" id="salary"/>
+        </div>
+
+        <div id="credit_form">
+            <label for = "credit">Enter your credit score: </label>
+            <input type="text" name="credit" id="credit"/>
+
+        </div>
+
+        <div id="months_form">
+            <label for = "months">Enter your months at your current job: </label>
+            <input type="text" name="months" id="months"/>
+            <br/>
+            <button id="submit_loan">Submit Loan Application</button>
+        </div>
+    </form>
+
+    <p id="results"></p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
